@@ -14,7 +14,11 @@ We are actively maintaining this repo and adding new
 implementations.
 [![Twitter](https://img.shields.io/twitter/follow/labmlai?style=social)](https://twitter.com/labmlai) for updates.
 
-## Languages: **[English](https://nn.labml.ai)** | **[Chinese (translated)](https://nn.labml.ai/zh/)**
+## Translations
+
+### **[English (original)](https://nn.labml.ai)**
+### **[Chinese (translated)](https://nn.labml.ai/zh/)**
+### **[Japanese (translated)](https://nn.labml.ai/ja/)**
 
 ## Paper Implementations
 
@@ -105,6 +109,7 @@ Solving games with incomplete information such as poker with CFR.
 * [Noam Optimizer](optimizers/noam.html)
 * [Rectified Adam Optimizer](optimizers/radam.html)
 * [AdaBelief Optimizer](optimizers/ada_belief.html)
+* [Sophia-G Optimizer](optimizers/sophia.html)
 
 #### ✨ [Normalization Layers](normalization/index.html)
 * [Batch Normalization](normalization/batch_norm/index.html)
