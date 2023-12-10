@@ -1,7 +1,7 @@
 # [Group Normalization](https://nn.labml.ai/normalization/group_norm/index.html)
 
 This is a [PyTorch](https://pytorch.org) implementation of
-the [Group Normalization](https://papers.labml.ai/paper/1803.08494) paper.
+the [Group Normalization](https://arxiv.org/abs/1803.08494) paper.
 
 [Batch Normalization](https://nn.labml.ai/normalization/batch_norm/index.html) works well for large enough batch sizes
 but not well for small batch sizes, because it normalizes over the batch.
@@ -15,6 +15,6 @@ This is based on the observation that classical features such as
 The paper proposes dividing feature channels into groups and then separately normalizing
 all channels within each group.
 
-Here's a [CIFAR 10 classification model](https://nn.labml.ai/normalization/group_norm/experiment.html) that uses instance normalization.
+Here's a [CIFAR 10 classification model](https://nn.labml.ai/normalization/group_norm/experiment.html) that uses group normalization.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/labmlai/annotated_deep_learning_paper_implementations/blob/master/labml_nn/normalization/group_norm/experiment.ipynb)

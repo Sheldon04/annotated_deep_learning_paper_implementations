@@ -9,7 +9,7 @@ summary: >
 #  Vision Transformer (ViT)
 
 This is a [PyTorch](https://pytorch.org) implementation of the paper
-[An Image Is Worth 16x16 Words: Transformers For Image Recognition At Scale](https://papers.labml.ai/paper/2010.11929).
+[An Image Is Worth 16x16 Words: Transformers For Image Recognition At Scale](https://arxiv.org/abs/2010.11929).
 
 Vision transformer applies a pure transformer to images
 without any convolution layers.
@@ -191,11 +191,11 @@ class VisionTransformer(Module):
         """
         # Get patch embeddings. This gives a tensor of shape `[patches, batch_size, d_model]`
         x = self.patch_emb(x)
-        # Add positional embeddings
-        x = self.pos_emb(x)
         # Concatenate the `[CLS]` token embeddings before feeding the transformer
         cls_token_emb = self.cls_token_emb.expand(-1, x.shape[1], -1)
         x = torch.cat([cls_token_emb, x])
+        # Add positional embeddings
+        x = self.pos_emb(x)
 
         # Pass through transformer layers with no attention masking
         for layer in self.transformer_layers:
